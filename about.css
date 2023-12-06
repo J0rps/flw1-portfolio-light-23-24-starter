@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+.nav_bar{
+  list-style-type: none;
+  text-decoration: none;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  display: flex;
+}
+nav{
+  border-radius: 20px;
+  background-color: #1111b6;
+  margin: 0px;
+  padding: 15px;
+  width: 80%;
+  min-width: 100%;
+}
+li{
+
+  padding-right: 40px;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+
+
+/* */
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  min-height: 100vh
+}
+/* used for when hover, doesnt make stupide scroll bar */
+.img-container{
+  overflow: hidden;
+}
+.img-container img{
+  width:  100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+.preview{
+background: rgba(0,0,0,.8);
+position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;  
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s ease-out;
+}
+.preview.open{
+  opacity: 1;
+  pointer-events: all;
+}
+.preview p{
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+.full-img{
+  position: absolute;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: all 0.25s ease-out;
+}
+/* class in css for the class full img in html */
+.full-img.open{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.nav_bar a:hover{
+  color: #b50d0d;
+}
+.img-container img:hover{
+  transform: scale(1.2);
+}
+

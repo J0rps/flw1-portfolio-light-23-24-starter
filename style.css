@@ -1,12 +1,33 @@
 /* Add flexbox to the navbars. */
+.nav_bar{
+ list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 75px;
+  display: block;
 
+}
+
+a{
+  text-decoration: none;
+  color:black
+  
+}
 /* Format the size of all images. */
 
 /* Style the font color. */
 
 /* Style the background with a color or image. */
-
+body{
+  background: #2e2d2d;
+}
 /* Adjust the spacing of your page. */
 
 /* Adjust the positioning of your page.  */
 
+/* when hovering on point it makes background purple*/
+li:hover{
+  background-image: linear-gradient(to left, transparent , #620962);
+}
