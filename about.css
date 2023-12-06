@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 .nav_bar{
   list-style-type: none;
   text-decoration: none;
@@ -20,15 +21,21 @@ nav{
   min-width: 100%;
 }
 li{
-
   padding-right: 40px;
 }
 a{
   color: black;
   text-decoration: none;
 }
-
-
+p{
+  text-align: center;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+.favorite{
+  font-size: 20px;
+  font-family: sans-serif;
+}
 /* */
 .gallery{
   display: grid;
